@@ -1,8 +1,20 @@
-import { Grid } from './Grid'
 import '../styles/board.scss';
+import { IBoard } from '../types';
+import { Tile } from './Tile';
 
-export const Board = () => {
+type Props = {
+  board: IBoard;
+}
+
+export const Board = ({ board }: Props) => {
+
+
   return (
-    <Grid />
-  );
-};
+    <div className="board">
+      {board.map((cell, i) => (
+        !cell ? cell :
+        <Tile key={i} value={cell} />
+      ))}
+    </div>    
+  )
+}

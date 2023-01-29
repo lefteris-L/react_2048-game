@@ -1,0 +1,23 @@
+$borderWidth: 1.5vmin;
+$boardSide: 60vmin;
+$bgColorLight: #bbada0;
+
+.board {
+  display: grid;
+  grid: repeat(4, 1fr) / repeat(4, 1fr);
+  gap: $borderWidth;
+
+  width: $boardSide;
+  height: $boardSide;
+  min-width: 160px;
+  min-height: 160px;
+
+  background-color: $bgColorLight;
+  border: $borderWidth solid $bgColorLight;
+  border-radius: $borderWidth / 2;
+
+  &:not(.grid) {
+    background-color: transparent;
+    border-color: transparent;
+  }
+}
