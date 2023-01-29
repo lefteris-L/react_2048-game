@@ -6,6 +6,6 @@ type Props = {
 
 export const Tile = ({ value }: Props) => {
   return (
-    <div className={`tile tile--${value}`}>{value}</div>
+    <div className={`tile tile--${value}`}>{value || ''}</div>
   )
 }

@@ -5,4 +5,4 @@ export type TileData = {
   mergeWith?: number;
 };
 
-export type IBoard = (number | null)[];
+export type IBoard = number[];

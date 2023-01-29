@@ -12,7 +12,7 @@ export const Board = ({ board }: Props) => {
   return (
     <div className="board">
       {board.map((cell, i) => (
-        !cell ? cell :
+        typeof cell === 'string' ? cell :
         <Tile key={i} value={cell} />
       ))}
     </div>    
