@@ -1,0 +1,92 @@
+.tile {
+  width: 0,25em;
+  height: 0,25em;
+  background-color: rgba(238,228,218,.35);
+  border-radius: 0.5em;
+
+  &:not(.--grid) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #776e65;
+    font-weight: bold;
+    font-size: 20px;
+    transition-property: left, top, transform;
+    transition-duration: 250ms, 250ms, 100ms;
+    transform: scale(1);
+  }
+
+  &:not(.tile--2, .tile--4) {
+    color: #f9f6f2;
+  }
+
+  &--128,
+  &--256,
+  &--512 {
+    font-size: 55px;
+  }
+
+  &--1024,
+  &--2048 {
+    font-size: 60px;
+  }
+
+  &--2 {
+    background: #eee4da;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0),
+      inset 0 0 0 1px rgba(255, 255, 255, 0);
+  }
+
+  &--4 {
+    background: #ede0c8;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0),
+      inset 0 0 0 1px rgba(255, 255, 255, 0);
+  }
+
+  &--8 {
+    background: #f2b179;
+  }
+
+  &--16 {
+    background: #f59563;
+  }
+
+  &--32 {
+    background: #f67c5f;
+  }
+
+  &--64 {
+    background: #f65e3b;
+  }
+
+  &--128 {
+    background: #edcf72;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+  }
+
+  &--256 {
+    background: #edcc61;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+  }
+
+  &--512 {
+    background: #edc850;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+  }
+
+  &--1024 {
+    background: #edc53f;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+  }
+
+  &--2048 {
+    background: #edc22e;
+    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+  }
+}
